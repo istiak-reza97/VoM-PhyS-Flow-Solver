@@ -17,6 +17,6 @@ to obtain the pressure map inside the flow domain, run the codes in the followin
 
 if you wish to play around with parameters, change them in Flow_solver_parameter_file_loader.py.
 
-The solver may require preconditioner matrix. You can solve the system for a very small e value (preferably 1 or 2 voxel length) and use that solution as the preconditioner. 
+The solver may require preconditioner matrix. You can solve the system for a very small e value (preferably 1 or 2 voxel length) and use that solution as the preconditioner. X = spla.gmres(A,B,M=M,x0=X0,rtol=1e-10) in this line change the X0 to your desired solution vector. you'll find the code line to load X0 a few lines above X = spla.gmres(A,B,M=M,x0=X0,rtol=1e-10).
 
-use vessels_plot.py for plotting the pressure map
+use vessels_plot.py for plotting the pressure map.
