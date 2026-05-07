@@ -18,3 +18,5 @@ to obtain the pressure map inside the flow domain, run the codes in the followin
 if you wish to play around with parameters, change them in Flow_solver_parameter_file_loader.py.
 
 The solver may require preconditioner matrix. You can solve the system for a very small e value (preferably 1 or 2 voxel length) and use that solution as the preconditioner. 
+
+use vessels_plot.py for plotting the pressure map
